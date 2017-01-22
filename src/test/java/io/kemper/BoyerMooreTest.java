@@ -25,10 +25,10 @@ public class BoyerMooreTest {
 	
 	@Test
 	public void testSearchFailure() {
-		assertEquals(-1, boyerMoore.search("AAAGT"));
-		assertEquals(-1, boyerMoore.search("AAGTT"));
-		assertEquals(-1, boyerMoore.search("AAATT"));
-		assertEquals(-1, boyerMoore.search("AAGTT"));
+		assertEquals(-1, boyerMoore.search("AAAGTC"));
+		assertEquals(-1, boyerMoore.search("CAAGTT"));
+		assertEquals(-1, boyerMoore.search("AAACTT"));
+		assertEquals(-1, boyerMoore.search("AACGTT"));
 	}
 	
 }
